@@ -90,3 +90,13 @@ function panggilObjects() {
   }
 panggilForIn();
 
+
+// for each
+function panggilForEach(){
+  var data = ['a','b','c'];
+  data.forEach(function(item,index,array){
+    console.log(item);
+  }) 
+}
+
+panggilForEach();

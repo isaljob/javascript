@@ -1,8 +1,14 @@
 function panggilSplit() {
   var kalimat = 'kita sedang belajar js'
-  var result = kalimat.split(' ')
+  var iniSplit = kalimat.split(' ')
+  var iniJoin = iniSplit.join(' ')
 
-  return result
+  // return iniJoin
+  console.log('ini kalimat: ', kalimat)
+  console.log('kalimat di split: ', iniSplit);
+  console.log('hasil split di join: ', iniJoin);
 }
 
-console.log(panggilSplit());
+// console.log(panggilSplit());
+
+panggilSplit();
