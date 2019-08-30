@@ -12,11 +12,11 @@ function panggilSemangat(){
 var bintang = "*****"
 
 function panggilBintang(){
-    for(i=1;i<10;i++){
+    for(i=1;i<5;i++){
         console.log(bintang.repeat(i));
     }
 
-    for(j=10;j>0;j--){
+    for(j=5;j>0;j--){
         console.log(bintang.repeat(j));
     }
 }

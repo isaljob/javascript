@@ -3,14 +3,13 @@
 // Setelah itu teman teman tampilkan nilai awal array tersebut, lakukan perintah pop dan shift sehingga hasilnya akan seperti ini :
 
 var buah = ['pisang','jeruk','apel','mangga']
-console.log('Array:',buah);
 
-buah.pop()      //element terakhir (mangga) dihapus dari array
-console.log('Array dengan POP:',buah)
+const panggilBuah = () =>{
+    console.log(buah);
+    buah.pop()
+    console.log(buah);
+    buah.shift()
+    console.log(buah);
+}
 
-buah.shift()    //element pertama (pisang) dihapus dari array
-console.log('Array dengan switch:',buah)
-
-var x    = buah.pop()   //x berisi element terkahir, yaitu mangga
-var y    = buah.shift() //y berisi element terkahir, yaitu mangga
-console.log(x,'dan',y);
+panggilBuah();

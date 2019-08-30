@@ -3,8 +3,11 @@
 // Setelah itu teman teman tampilkan nilai awal array tersebut, lakukan perintah unshift dan tambahkan data  apel dan mangga seperti :
 
 var buah = ['pisang','jeruk']
-console.log('Array:',buah);
 
-buah.unshift('mangga')
-buah.unshift('apel')
-console.log('Array dengan UNSHIFT:',buah);
+const panggilBuah = () =>{
+    console.log(buah);
+    buah.unshift('apel','mangga')
+    console.log(buah);
+}
+
+panggilBuah();
