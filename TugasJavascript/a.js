@@ -196,3 +196,62 @@ for (var i=0;i<=10;i++){
     }
     console.log("step ke-",i);
 }
+
+// array every
+console.log(separator, "array every");
+ let products = [
+     {name: "Apple", type: "fruit"},
+     {name: "Monitor", type: "computer"},
+     {name: "Mango", type: "fruit"},
+     {name: "Table", type: "furniture"}
+ ]
+
+ console.log(
+     products.every(product => product.type === "fruit")
+ )
+
+ // array some
+ console.log(separator, "array some");
+ let produks = [
+    {name: "Apple", type: "fruit"},
+    {name: "Monitor", type: "computer"},
+    {name: "Mango", type: "fruit"},
+    {name: "Table", type: "furniture"}
+]
+
+console.log(
+    produks.some(produk => produk.type === "fruit")
+)
+
+// find
+console.log(separator, "array find");
+var ages = [3, 10, 18, 20];
+
+console.log('hasil find: ',
+   ages.find(age => {
+       return age === 20; // jika element di array match dengan data yang dicari, maka akan tampil di console, jika tidak maka undefined
+   })
+)
+
+// findIndex
+console.log(separator, "array findIndex");
+var ages = [3, 10, 18, 20];
+
+console.log('hasil findIndex: ',
+   ages.findIndex(age => {
+       return age === 18; // jika element di array match dengan data yang dicari, maka akan tampil di indexnya console, jika tidak maka undefined
+   })
+);
+
+// sort
+console.log(separator, "array findIndex");
+var ages = [18, 3, 10, 20];
+    // sort tanpa parameter 
+var urutkan = ages.sort();
+console.log(urutkan);
+    // sort dengan parameter 
+console.log(
+    ages.sort(function(a,b){
+        return a-b;
+    })
+);
