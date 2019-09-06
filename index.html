@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript DOM</title>
+    </head>
+    <body>
+        <h1>JavaScript DOM (Document Object Model)</h1>
+
+        <h3>JavaScript Panggil Function dengan Button</h3>
+        <button type="button" onclick="fungsi1()">Panggil Fungsi</button>
+        <hr>
+
+        <br>
+        <h3>JavaScript Alert</h3>
+        <button type="button" onclick="jalanAlert()">Jalankan Alert</button>
+        <hr>
+
+        <br>
+        <h3>JavaScript Seleksi Element DOM dengan .getElementById()</h3>
+        <input type="text" id="namadepan">
+        <button type="button" onclick="getNamaDepanById()">Panggil Nama by Id</button>
+        <hr>
+
+        <br>
+        <h3>JavaScript Seleksi Element DOM dengan .getElementsByClassName()</h3>
+        <input type="text" id="namadepan" class="namadepanClass">
+        <button type="button" onclick="getNamaDepanByClassName()">Panggil Nama by Class</button>
+        <hr>
+
+        <br>
+        <h3>JavaScript Seleksi Element DOM dengan .getElementsByTagName()</h3>
+        <input type="text" id="namadepan" class="namadepanClass">
+        <button type="button" onclick="getNamaByTagName()">Panggil Nama by Tag Name</button>
+        <hr>
+
+
+        <!-- penulisan code javascript secara internal tanpa src="index.js"-->
+        <script type="text/javascript" src="index.js">
+            // console.log("Menuliskan code JavaScript di browser secara internal")
+        </script>
+    </body>
+</html>
