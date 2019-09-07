@@ -24,8 +24,14 @@ function getNamaDepanByClassName(){
     console.log(nama);
 }
 
-// seleksi DOM dengan .getElementsByClassName()
+// seleksi DOM dengan .getElementsByTagName()
 function getNamaByTagName(){
     let nama = document.getElementsByTagName('input');
+    console.log(nama);
+}
+
+// seleksi DOM dengan .getElementsByTagName()
+function getNamaByQuerySelector(){
+    let nama = document.querySelector('.namadepanClass');
     console.log(nama);
 }
