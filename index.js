@@ -35,3 +35,31 @@ function getNamaByQuerySelector(){
     let nama = document.querySelector('.namadepanClass');
     console.log(nama);
 }
+
+// Attribute Item
+function getTombol(){
+    var a = document.getElementsByTagName('button')[0]; // diberi [0] karena attributenya terbaca berupa array
+    var b = a.attributes.item(1).name;
+    document.getElementById("contoh").innerHTML = b;
+    console.log(a);
+    console.log(b);
+}
+
+// Attribute getNamedItem
+function getTombolNamedItem(){
+    var a = document.getElementsByTagName('button')[0]; // diberi [0] karena attributenya terbaca berupa array
+    var b = a.attributes.getNamedItem('onclick').value;
+    document.getElementById("contoh2").innerHTML = b;
+    console.log(a);
+    console.log(b);
+}
+
+// Attribute length
+function getTombolLength(){
+    var a = document.getElementsByTagName('button')[0]; // diberi [0] karena attributenya terbaca berupa array
+    var b = a.attributes.length;
+    var c = 'Terdapat '+ b +' element pada attribute Button';
+    document.getElementById("contoh3").innerHTML = c;
+    console.log(a);
+    console.log(b);
+}
